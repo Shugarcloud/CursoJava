@@ -9,9 +9,12 @@ public class EJ1 {
         boolean sera = pop(num1);
         message(sera);
     }
+    static void prinTxt(String message){
+        System.out.println(message);
+    }
     static int readIn(String message){
         Scanner leer = new Scanner(System.in);
-        System.out.println(message);
+        prinTxt(message);
         return leer.nextInt();
     }
     static boolean pop(int num1){
@@ -19,9 +22,9 @@ public class EJ1 {
     }
     static void message(boolean sera){
         if(sera){
-            readIn("El numero ingresado es par");
+            prinTxt("El numero ingresado es par");
         }else{
-            readIn("El numero es impar");
+            prinTxt("El numero es impar");
         }
     }
     
